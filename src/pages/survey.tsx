@@ -27,7 +27,7 @@ function Survey({}: Props) {
           <Link href="/">الصفحة الرئيسية</Link>
         </nav>
         <div className="w-full bg-third py-32">
-          <div className="mx-auto w-[768px]">
+          <div className="mx-auto w-fuyll max-w-[768px]">
             <SurveyComponent />
           </div>
         </div>
