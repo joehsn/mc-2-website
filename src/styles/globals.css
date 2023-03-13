@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* For defaultV2 theme */
+:root {
+  --primary: #c84656;
+  --background: #ffffff;
+  --background-dim: #ececee;
+  --background-dim-light: #ececee;
+  --primary-foreground: #ffffff;
+  --foreground: #575657;
+  --base-unit: 8px;
+}
