@@ -4,6 +4,7 @@
 
 /* For defaultV2 theme */
 :root {
+  --font-family: "Tajawal", sans-serif !important;
   --primary: #c84656;
   --background: #ffffff;
   --background-dim: #ececee;
