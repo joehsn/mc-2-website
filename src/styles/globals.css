@@ -14,11 +14,41 @@
   --base-unit: 8px;
 }
 
+@layer base {
+  img {
+    @apply select-none;
+  }
+  body {
+    @apply bg-white dark:bg-slate-900;
+  }
+}
+
 @layer components {
   .btn {
-    @apply rounded-md bg-main px-4 py-2 text-white transition-colors duration-300 ease-linear hover:bg-rose-700;
+    @apply rounded-md bg-main px-4 py-2 text-white transition-colors duration-300 ease-linear hover:bg-rose-700 active:bg-rose-600;
   }
   .outline-btn {
-    @apply rounded-md border border-white bg-transparent px-4 py-2  text-white hover:bg-white/20 active:bg-white/40 transition-colors duration-300 ease-linear;
+    @apply rounded-md border border-white bg-transparent px-4 py-2  text-white transition-colors duration-300 ease-linear hover:bg-white/20 active:bg-white/40;
+  }
+  .theme-switcher {
+    @apply rounded-md border border-main bg-transparent p-2 text-main transition-colors duration-300 ease-linear;
+  }
+  .shape-fill {
+    @apply fill-white dark:fill-slate-900;
+  }
+  .tilt {
+    @apply absolute left-0 w-full overflow-hidden leading-[0];
+  }
+  .tilt:first-of-type {
+    @apply top-0;
+  }
+  .tilt:last-of-type {
+    @apply bottom-0 rotate-180;
+  }
+  .tilt svg {
+    @apply relative block h-12 w-[calc(100%+1.3px)];
+  }
+  .social-icon {
+    @apply text-gray-500 hover:text-main dark:text-gray-200 transition-colors duration-150 ease-linear;
   }
 }
