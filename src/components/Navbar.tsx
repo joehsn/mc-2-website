@@ -34,7 +34,7 @@ export default function Navbar() {
           } fixed inset-0 z-[9999] overflow-hidden bg-slate-900/25 md:relative md:inset-auto md:bg-transparent md:ml-auto`}
           // onClick={() => setMenu(false)}
         >
-          <div className="relative flex h-full w-full max-w-[24rem] flex-col items-end justify-between gap-6 bg-white px-4 py-8 ml-auto md:h-auto md:flex-row md:items-center md:bg-transparent md:p-0 md:ml-0">
+          <div className="relative flex h-full w-full max-w-[24rem] flex-col items-end justify-between gap-6 bg-white bg-[url('/assets/quote.svg')] bg-no-repeat bg-[120%_-50%] px-4 py-8 ml-auto md:h-auto md:flex-row md:items-center md:bg-transparent md:p-0 md:ml-0">
             <button onClick={() => setMenu(false)} className="md:hidden">
               <AiOutlineClose size={24} />
             </button>
@@ -42,23 +42,26 @@ export default function Navbar() {
               <Link
                 href="#our-services"
                 className="hover:text-gray-400 dark:hover:text-gray-100"
+                onClick={() => setMenu(false)}
               >
                 خدماتنا
               </Link>
               <Link
                 href="#about-us"
                 className="hover:text-gray-400 dark:hover:text-gray-100"
+                onClick={() => setMenu(false)}
               >
                 من نحن
               </Link>
               <Link
                 href="/contact-us"
                 className="hover:text-gray-400 dark:hover:text-gray-100"
+                onClick={() => setMenu(false)}
               >
                 تواصل معنا
               </Link>
             </nav>
-            <button className="btn w-full md:min-w-fit">الاستبيان</button>
+            <button className="btn w-full md:min-w-fit" onClick={() => setMenu(false)}>الاستبيان</button>
             <div className="social flex w-full items-center justify-evenly text-gray-600 md:hidden">
               <a href="#facebook" className="social-icon">
                 <AiFillFacebook size={24} />

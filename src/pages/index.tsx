@@ -96,7 +96,7 @@ export default function Home() {
               <div className="text-3xl font-bold text-main md:text-5xl">
                 كلمة رئيس مجلس الإدارة
               </div>
-              <p className="my-4 text-justify">
+              <p className="my-4 text-justify dark:text-second">
                 إن الحاجة الماسة للقطاعات الخاصة والحكومية في مجال التطوير
                 بمختلف اشكاله يتيح لنا الأفق في تقديم خدماتنا المتمركزة على
                 الحلول العملية والإستراتيجية التي بدورها تنهض بأهداف تلك
@@ -154,14 +154,14 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="bg-main py-16 text-center text-white md:text-start">
+        <section className="bg-main py-16 text-justify text-white">
           <div className="container">
             <div className="text-4xl font-bold">
               نحن نقدم حلولاً لتنمية أعمالك
             </div>
             <p className="my-6 md:w-2/3">
               إن الخبرات العملية والتنفيذية الشمولية بمختلف القطاعات لشركة
-              <span>The Corprate&apos;or</span>
+              <span> The Corprate&apos;or </span>
               يؤهلها لتقديم الخدمات التطويرية بما يتناسق مع طبيعة الأنشطة
               المؤسسية من حيث توزيع ورسم المهام لكل إدارة داخلية، ولابد من توضيح
               مفهوم التطوير الشمولي لقطاع الأعمال بشكليه الخاص والحكومي، حيث أن
@@ -184,7 +184,7 @@ export default function Home() {
                   عملائنا
                 </span>
               </div>
-              <ul className='list-disc px-4'>
+              <ul className="list-disc px-4">
                 <li>بستان المتظل وبئر عذق بالمدينة المنورة</li>
                 <li>مدينيات مشاعل</li>
                 <li>شركة البينة للمحاماة</li>
@@ -204,11 +204,21 @@ export default function Home() {
                   مشاريعنا
                 </span>
               </div>
-              <ul className='list-disc px-4'>
+              <ul className="list-disc px-4">
                 <li>SPOOKY HOLLER</li>
                 <li>ROOF GARDEN</li>
                 <li>نادي الأعمال</li>
               </ul>
+            </div>
+          </div>
+        </section>
+        <section className="bg-third py-16">
+          <div className="container">
+            <div className="flex gap-y-6 flex-col sm:flex-row text-center sm:text-start items-center lg:w-2/3 lg:mx-auto">
+              <div className="flex-grow text-2xl dark:text-second font-medium">
+                هل أنت مستعد لنقل نمو عملك إلى المستوى التالي؟
+              </div>
+              <button className="btn px-8 w-full min-w-fit sm:w-auto">اطلب الان</button>
             </div>
           </div>
         </section>

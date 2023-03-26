@@ -2,6 +2,7 @@ import { Tajawal } from "next/font/google";
 import { useForm } from "react-hook-form";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
+import Footer from "@/components/Footer";
 
 const tajawal = Tajawal({
   weight: ["200", "300", "400", "500", "700", "800", "900"],
@@ -121,6 +122,7 @@ export default function ContactUs() {
             </div>
           </div>
         </section>
+        <Footer />
       </main>
     </>
   );

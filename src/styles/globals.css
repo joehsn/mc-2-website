@@ -49,6 +49,6 @@
     @apply relative block h-12 w-[calc(100%+1.3px)];
   }
   .social-icon {
-    @apply text-gray-500 hover:text-main dark:text-gray-200 transition-colors duration-150 ease-linear;
+    @apply text-gray-500 dark:hover:text-main hover:text-main dark:text-gray-200 transition-colors duration-150 ease-linear ;
   }
 }
