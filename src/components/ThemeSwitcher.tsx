@@ -8,6 +8,7 @@ export default function ThemeSwitcher() {
     <button
       className="theme-switcher"
       onClick={() => (theme === "light" ? setTheme("dark") : setTheme("light"))}
+      aria-label="زر التبديل بين اشكال الموقغ"
     >
       {theme === "light" ? (
         <BiMoon aria-label="dark theme" size={20} />

@@ -32,15 +32,17 @@ export default function Home() {
         <section className="relative overflow-y-hidden py-36">
           <div className="absolute inset-0 -z-10">
             <img
-              data-src="/flowers.jpg"
+              data-src="/flowers.webp"
               alt="background texture"
+              width={5676}
+              height={3784}
               className="lazyload h-full w-full object-cover object-top contrast-50 grayscale-[0.5]"
             />
           </div>
           <div className="container flex h-full flex-col items-center justify-center gap-y-10 text-center text-white">
-            <h1 className="text-3xl font-bold lg:text-5xl">
+            <div className="text-3xl font-bold lg:text-5xl">
               قيمنا نطمح لتحقيقها
-            </h1>
+            </div>
             <span className="sm:w-1/2">
               الإحترافية والذكاء، وضوح المهمات وتطبيقها، استثمار التطوير في
               مجالاته الواسعة، ثم الثقة. قيم نطمح لتحقيقها وتمثيلها بأدائنا
@@ -54,9 +56,9 @@ export default function Home() {
         </section>
         <section className="my-16 text-center">
           <div className="container">
-            <h2 className="mb-4 w-full text-4xl font-bold text-gray-900 dark:text-white lg:text-5xl">
+            <div className="mb-4 w-full text-4xl font-bold text-gray-900 dark:text-white lg:text-5xl">
               خدماتنا
-            </h2>
+            </div>
             <div className="mb-12 w-full text-gray-600 dark:text-gray-300">
               نمتلك خبرة طويلة في مجالنا، ولذلك نستطيع تقديم خدمات متميّزة لك.
             </div>
@@ -68,7 +70,7 @@ export default function Home() {
                     alt={`رسمة للتعبير عن ${service.title}`}
                     className="lazyload mx-auto mb-6 aspect-square w-48 object-contain"
                   />
-                  <h5 className="mb-2 text-2xl font-bold">{service.title}</h5>
+                  <div className="mb-2 text-2xl font-bold">{service.title}</div>
                   <span className="tracking-wide text-gray-600 dark:text-gray-300">
                     {service.brief}
                   </span>
@@ -115,6 +117,8 @@ export default function Home() {
             <img
               data-src="/chairman.webp"
               alt="رئيس مجلس الإدارة"
+              width={200}
+              height={500}
               className="lazyload aspect-square object-contain md:w-1/2"
             />
           </div>
@@ -134,9 +138,9 @@ export default function Home() {
         </section>
         <section className="my-16 text-center">
           <div className="container">
-            <h2 className="mb-4 w-full text-4xl font-bold text-gray-900 dark:text-white lg:text-5xl">
+            <div className="mb-4 w-full text-4xl font-bold text-gray-900 dark:text-white lg:text-5xl">
               شركاء النجاح
-            </h2>
+            </div>
             <div className="mb-12 w-full text-gray-600 dark:text-gray-300">
               نفخر بشركاء التطور والنمو
             </div>
@@ -148,7 +152,7 @@ export default function Home() {
                     alt={`شعار ${partner.title}`}
                     className="lazyload mx-auto mb-6 aspect-square w-48 object-contain"
                   />
-                  <h5 className="mb-2 text-2xl font-bold">{partner.title}</h5>
+                  <div className="mb-2 text-2xl font-bold">{partner.title}</div>
                 </div>
               ))}
             </div>
@@ -178,7 +182,9 @@ export default function Home() {
                 <img
                   data-src="/assets/deal.webp"
                   alt="shaking hands"
-                  className="lazyload aspect-video object-fill "
+                  width={910}
+                  height={533}
+                  className="lazyload aspect-video w-full object-fill"
                 />
                 <span className="absolute top-0 left-0 flex h-full w-full items-center justify-center bg-slate-900/70 text-2xl text-white md:text-5xl">
                   عملائنا
@@ -198,7 +204,9 @@ export default function Home() {
                 <img
                   data-src="/assets/model.webp"
                   alt="model paper"
-                  className="lazyload aspect-video object-fill "
+                  width={2560}
+                  height={1280}
+                  className="lazyload aspect-video w-full object-fill"
                 />
                 <span className="absolute top-0 left-0 flex h-full w-full items-center justify-center bg-slate-900/70 text-2xl text-white md:text-5xl">
                   مشاريعنا
@@ -214,11 +222,13 @@ export default function Home() {
         </section>
         <section className="bg-third py-16">
           <div className="container">
-            <div className="flex gap-y-6 flex-col sm:flex-row text-center sm:text-start items-center lg:w-2/3 lg:mx-auto">
-              <div className="flex-grow text-2xl dark:text-second font-medium">
+            <div className="flex flex-col items-center gap-y-6 text-center sm:flex-row sm:text-start lg:mx-auto lg:w-2/3">
+              <div className="flex-grow text-2xl font-medium dark:text-second">
                 هل أنت مستعد لنقل نمو عملك إلى المستوى التالي؟
               </div>
-              <button className="btn px-8 w-full min-w-fit sm:w-auto">اطلب الان</button>
+              <button className="btn w-full min-w-fit px-8 sm:w-auto">
+                اطلب الان
+              </button>
             </div>
           </div>
         </section>
