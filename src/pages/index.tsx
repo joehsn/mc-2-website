@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { Tajawal } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import { services } from "@/utils/services";
@@ -31,12 +32,12 @@ export default function Home() {
         <Navbar />
         <section className="relative overflow-y-hidden py-36">
           <div className="absolute inset-0 -z-10">
-            <img
-              data-src="/flowers.webp"
+            <Image
+              src="/flowers.webp"
               alt="background texture"
               width={5676}
               height={3784}
-              className="lazyload h-full w-full object-cover object-top contrast-50 grayscale-[0.5]"
+              className="h-full w-full object-cover object-top contrast-50 grayscale-[0.5]"
             />
           </div>
           <div className="container flex h-full flex-col items-center justify-center gap-y-10 text-center text-white">
@@ -65,10 +66,12 @@ export default function Home() {
             <div className="grid w-full grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
               {services.map((service, idx) => (
                 <div key={idx} className="flex w-full flex-col">
-                  <img
-                    data-src={service.img}
+                  <Image
+                    src={service.img}
+                    width={400}
+                    height={400}
                     alt={`رسمة للتعبير عن ${service.title}`}
-                    className="lazyload mx-auto mb-6 aspect-square w-48 object-contain"
+                    className="mx-auto mb-6 aspect-square w-48 object-contain"
                   />
                   <div className="mb-2 text-2xl font-bold">{service.title}</div>
                   <span className="tracking-wide text-gray-600 dark:text-gray-300">
@@ -114,12 +117,12 @@ export default function Home() {
               </p>
               <div className="text-main">أ.رياض عسيري - الرئيس التنفيذي</div>
             </div>
-            <img
-              data-src="/chairman.webp"
+            <Image
+              src="/chairman.webp"
               alt="رئيس مجلس الإدارة"
               width={200}
               height={500}
-              className="lazyload aspect-square object-contain md:w-1/2"
+              className="aspect-square object-contain md:w-1/2"
             />
           </div>
           <div className="tilt">
@@ -147,10 +150,12 @@ export default function Home() {
             <div className="grid w-full grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
               {partners.map((partner, idx) => (
                 <div key={idx} className="flex w-full flex-col">
-                  <img
-                    data-src={partner.img}
+                  <Image
+                    src={partner.img}
+                    width={400}
+                    height={400}
                     alt={`شعار ${partner.title}`}
-                    className="lazyload mx-auto mb-6 aspect-square w-48 object-contain"
+                    className="mx-auto mb-6 aspect-square w-48 object-contain"
                   />
                   <div className="mb-2 text-2xl font-bold">{partner.title}</div>
                 </div>
@@ -179,12 +184,12 @@ export default function Home() {
           <div className="container flex flex-col justify-evenly gap-y-4 md:flex-row">
             <div className="w-full md:w-2/6">
               <div className="relative mb-4 overflow-hidden rounded-lg shadow-lg">
-                <img
-                  data-src="/assets/deal.webp"
+                <Image
+                  src="/assets/deal.webp"
                   alt="shaking hands"
                   width={910}
                   height={533}
-                  className="lazyload aspect-video w-full object-fill"
+                  className="aspect-video w-full object-fill"
                 />
                 <span className="absolute top-0 left-0 flex h-full w-full items-center justify-center bg-slate-900/70 text-2xl text-white md:text-5xl">
                   عملائنا
@@ -201,12 +206,12 @@ export default function Home() {
             </div>
             <div className="w-full md:w-2/6">
               <div className="relative mb-4 overflow-hidden rounded-lg shadow-lg">
-                <img
-                  data-src="/assets/model.webp"
+                <Image
+                  src="/assets/model.webp"
                   alt="model paper"
                   width={2560}
                   height={1280}
-                  className="lazyload aspect-video w-full object-fill"
+                  className="aspect-video w-full object-fill"
                 />
                 <span className="absolute top-0 left-0 flex h-full w-full items-center justify-center bg-slate-900/70 text-2xl text-white md:text-5xl">
                   مشاريعنا

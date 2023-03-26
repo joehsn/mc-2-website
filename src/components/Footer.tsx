@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import {
@@ -12,12 +13,12 @@ export default function Footer() {
     <footer className="py-12">
       <div className="container flex flex-col items-center gap-4 md:flex-row">
         <Link href="/">
-          <img
-            data-src="/logo.webp"
+          <Image
+            src="/logo.webp"
             alt="logo"
             width={702}
             height={190}
-            className="lazyload w-40"
+            className="w-40"
           />
         </Link>
         <p className="flex-1 text-center text-sm text-gray-500 md:text-start">

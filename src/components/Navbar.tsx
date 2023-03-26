@@ -9,6 +9,7 @@ import {
   AiFillYoutube,
   AiFillLinkedin,
 } from "react-icons/ai";
+import Image from "next/image";
 
 const ThemeSwitcher = dynamic(() => import("./ThemeSwitcher"), {
   ssr: false,
@@ -20,12 +21,12 @@ export default function Navbar() {
     <header className="w-full py-6">
       <div className="container flex items-center gap-x-2">
         <Link href="/" className="flex-1 md:flex-initial">
-          <img
-            data-src="/logo.webp"
+          <Image
+            src="/logo.webp"
             alt="logo"
             width={702}
             height={190}
-            className="lazyload w-40"
+            className="w-40"
           />
         </Link>
         <div
@@ -109,7 +110,9 @@ export default function Navbar() {
         >
           <AiOutlineMenu size={24} className="md:hidden" />
         </button>
-        <ThemeSwitcher />
+        <div className="h-[38px] w-[38px]">
+          <ThemeSwitcher />
+        </div>
       </div>
     </header>
   );
